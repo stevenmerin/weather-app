@@ -1,0 +1,63 @@
+html, body {
+  /* max-width: 100%; */
+  overflow-x: hidden;
+}
+body {
+  /* background: #eeedec; */
+  /* background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  url("img/weatherBg.jpg"); */
+  background: url('img/newWeatherBg.jpg');
+  background-size: cover;
+  letter-spacing: 0.2em;
+  font-size: 0.8em;
+  color: #023e8a;
+}
+h1, label, h4, h6 {
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
+.container {
+  max-width: 400px;
+}
+
+.icon {
+  position: relative;
+  top: -50px;
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: -50px;
+}
+.iconForecast {
+  position: relative;
+  border-radius: 50%;
+  top: -15%;
+  width: 100px;
+  vertical-align: middle;
+  transform: scale(0.8);
+}
+
+@media screen and (max-width: 600px) { 
+  body {
+    height: 100vh;
+  }
+  #weatherForecast {
+    padding-right: 0;
+    padding-left: 5%;
+  }
+  #weatherForecast h1 {
+    font-size: 1.8rem;
+  }
+  #iconSection {
+    padding-right: 0;
+  }
+  .contentForecast h4 {
+    font-size: 1rem;
+  }
+}
+
+
+/* @media only screen  and (min-width : 1824px) {
+  .container {
+    max-width: 400px;
+  }
+} */

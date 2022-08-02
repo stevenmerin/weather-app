@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel='icon' href='img/tabIcon.png'>
+  <link rel="stylesheet" href="styles.css">
+  <title>My Weather</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-lg-4 col-sm-12" id="weatherCard">
+      <div class="container my-5">
+        <h1 class="text-center my-4">My Weather</h1>
+        <form class="change-location my-4 text-center ">
+          <label for="city">Enter a location for weather information</label>
+          <input type="text" name="city" class="form-control p-4">
+          <h6 class="text-danger my-2" id="errorMsg"></h6>
+        </form>
+        <div class="card shadow-lg rounded d-none">
+          <img src="" class="time card-img-top" alt="pic">
+          <div class="icon bg-light mx-auto text-center">
+            <!-- icon -->
+            <img src="" alt="">
+          </div>
+          <div class="text-muted text-uppercase text-center details">
+            <!-- <h5 class="my-3">City Name</h5>
+            <div class="my-3">Weather condition</div>
+            <div class="display-4 my-4">
+              <span>temp</span>
+              <span>&deg;C </span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Weather Forecasts -->
+    <div class="col-lg-8 col-sm-12" id="weatherForecast">
+      <h1 class="text-center my-5">Weather Forecast</h1>
+      <div class="container-xl max-width px-auto mx-2 contentForecast">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"
+    integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="scripts/forecast.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
